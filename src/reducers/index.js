@@ -1,10 +1,14 @@
 import counterReducer from "./counter";
 import loggedReducer from "./isLogged";
+import colorReducer from "./colors";
 import { combineReducers } from "redux";
+import ageReducer from "./ageCalc";
 
 const allReducers = combineReducers({
   counter: counterReducer,
   isLogged: loggedReducer,
+  color: colorReducer,
+  age: ageReducer,
 });
 export default allReducers;
 
